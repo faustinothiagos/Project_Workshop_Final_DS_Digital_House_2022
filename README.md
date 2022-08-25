@@ -34,5 +34,5 @@ Projeto final do curso em Date Science Digital House 2° semestre 2022
  
 ***Para aula 55, crie uma apresentação para o CEO da empresa, detalhando os resultados. O relatorio deve ser de natureza não técnica.***
   
-  - [Acesso rápido ao Jupyter Notebook](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House/tree/main/Code)
-  - [Acesso rápido ao DataSet](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House/tree/main/DataSet)
+  - [Acesso rápido ao Jupyter Notebook](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/Code)
+  - [Acesso rápido ao DataSet](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/DataSet)
