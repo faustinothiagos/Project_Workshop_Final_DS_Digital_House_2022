@@ -1,3 +1,11 @@
-Tópicos
+Diretrizes Gerais do Projeto
 
-*Tópico - Violência 
+*Tópico de pesquisa ---------
+Violência contra mulher, analisar aspectos e tendências (raciais, localidade, autor do crime, tipo de violência, escolaridade, horário época do ano, orientação sexual)
+Análise de frequência de violência e probabilidades de ocorrência (a cada hora, tantas mulheres são violentadas etc).
+Dependendo das possibilidades de uso do dataset via Google Cloud, seria interessante analisar pelo menos no período de dois anos (dois ciclos completos, para ver as tendências sazonais)
+PCA e clusterização para entender os dados, visualizações etc.
+
+
+*Antecedentes sobre o assunto -------------
+
