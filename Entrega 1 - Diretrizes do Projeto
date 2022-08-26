@@ -1,0 +1,79 @@
+Diretrizes Gerais do Projeto
+
+*Tópico de pesquisa -------------------------------------------------------------
+
+Análise e classificação de Credit Score
+Entender os padrões, tendências e correlações, formular hipóteses etc. 
+(data, idade, ocupação, receita anual, salário em mãos mensal, taxa de juros, número e tipo de empréstimos, atraso para pagar, due date, montante devido, mix de crédito)
+Foco na EDA, Data Cleaning e Modelagem
+PCA e Clusterização para visualização
+Talvez inserir uma predição de recorrência de empréstimo
+
+*Antecedentes sobre o assunto ------------------------------------------
+
+Já há uma quantia de pesquisa razoável no assunto, contaando com diversas formas de eda e modelagens.
+
+EDA foi utilizado pandas, matplotlib, seaborn (gráficos de linha, colunas, dispersão, boxplot e heatmap) 
+e também o extra de PCA e Clusterização, já que temos uma quantia considerável de variáveis.
+
+Quanto aos modelos, foram usadas redes neurais (mlp, convolucionais), knn, svm, CART, regressão logística, naive-bayes. 
+As métricas utilizadas foram: matriz confusão, classification report (recall, precision, accuracy, f1-score), roc-auc.
+
+A acurácia de alguns dos modelos encontrados está abaixo:
+  - SVM: 67.22%
+  - CART: 65.11%
+  - Random Forest: 75.44%
+  - KNN (n_neighbours = 29): 53.98%
+  
+Redes Neurais Convolucionais conseguiram um intervalo de Recall = [0.75 0.85],
+de precision = [0.68 0.85],
+de f1-score = [0.73 0.80].
+
+*Contribuição Esperada ------------------------------------------------
+
+Esperamos contribuir nos seguintes pontos:
+  - Utilizar melhores métodos de limpeza de dados (bibliotecas especializadas);
+  - Explorar, investigar e conhecer o dataset (insights, hipóteses sobre as causalidades, correlações, estatísticas gerais e padrões);
+  - Modelagem diferente: Stacking dos 2 melhores modelos escolhidos para criar uma solução completa, isto é, soluções diferentes e complementares trabalhando juntas.
+  
+*Disponibilidade de dados e Infraestrutura ---------------------------------
+
+Os dados se encontram no Kaggle (https://www.kaggle.com/datasets/parisrohan/credit-score-classification)
+e temos 18 notebooks fazendo análise desse dataset.
+Esse dataset consiste nos dados mensais de vários clientes dentre três meses (Setembro, Outubro, Novembro e Dezembro).
+Não há indicação se os dados são reais ou sintéticos, nem do ano.
+Há mais de uma entrada por cliente, já que são observações mensais.
+
+Suas colunas são:
+
+- ID: representa código único de identificação da entrada (observação);
+- CUSTOMER_ID: código único de identificação do cliente;
+- MONTH: mês (data) da entrada;
+- NAME: nome do cliente;
+- AGE: idade do cliente;
+- SSN: Social Security Number do cliente (como o RG aqui no brasil);
+- OCCUPATION: ocupação do cliente;
+- ANNUAL INCOME: receita anual;
+- MONTHLY_INHAND_SALARY: valor recebido mensal de salário (em mãos);
+- NUM_BANK_ACCOUNTS: número de contas bancárias;
+- NUM_CREDIT_CARD: número de cartões de crédito (não contando o do banco coletor dos dados);
+- INTEREST_RATE: taxa de juros;
+- NUM_OF_LOAN: número de empréstimos feitos;
+- TYPE_OF_LOAN: tipos de empréstimo feito;
+- NUM_OF_DELAYED_PAYEMENT: representa o número médio de pagamentos com atraso;
+- CHANGED_CREDIT_LIMIT: Representa a variação percentual no limite do cartão de crédito;
+- Num_Credit_Inquiries: Representa o número de consultas de cartão de crédito;
+- Credit_Mix: Representa a classificação do mix de créditos;
+- Outstandind_Debt: Representa a dívida restante a ser paga (em USD);
+- Credit_Utilization_Ratio: Representa a taxa de utilização do cartão de crédito;
+- Credit_Utilization_Ratio: Representa a taxa de utilização do cartão de crédito;
+- Payment_of_Min_Amount: Representa se apenas o valor mínimo foi pago pela pessoa;
+- EMI: valor que paga por mês em um dia específico a um mutuário;
+- Total_EMI_per_month: Representa os pagamentos mensais do EMI (em USD);
+- Amount_invested_monthly: Representa o valor mensal investido pelo cliente (em USD);
+- Payment_Behaviour: Representa o comportamento de pagamento do cliente (em USD);
+- Monthly_Balance : Representa o valor do saldo mensal do cliente (em USD).
+
+*Plano de trabalho e cronograma provisório ----------------------------
+
+
