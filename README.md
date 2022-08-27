@@ -33,6 +33,14 @@ Projeto final do curso em Date Science Digital House 2° semestre 2022
 ***Para a aula 54, entregar um relatorio tecnico aos responsaveis pela area de Data Science da empresa detalhando os achados(jupyter Notebook). Deve ser entregue um arquivo de picie separado, que deve conter o melhor desempenho.***
  
 ***Para aula 55, crie uma apresentação para o CEO da empresa, detalhando os resultados. O relatorio deve ser de natureza não técnica.***
+
+# Requisitos:
+
+- Você pode usar qualquer um dos modelos visto nos modulos 3 e 4, mas você precisar avaliar os modelos vistos no modulo 5(modelos de montagem).
+- Um ajuste de hiperparâmentro deve ser realizado usando algumas das ferramentas e estrategias vista em aula.
+- Pelo menos um pipelini deve ser gerado contendo algumas das etapas de pré-processamento do conjunto de dados escolhidos.
+- Uma análise da importância das caracteristicas deve ser realizada, pelo menos, do modelo que teve melhor desempenho.
+- A biblioteca Pickle deve ser utilizada para serializar o modelo que teve o melhor desempenho e este então deve ser entregue ao responsvel por colocar os modelos em produção.
   
   - [Acesso rápido ao Jupyter Notebook](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/Code)
   - [Acesso rápido ao DataSet](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/DataSet)
