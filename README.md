@@ -36,7 +36,7 @@ Projeto final do curso em Date Science Digital House 2° semestre 2022
 
 # Requisitos:
 
-- Você pode usar qualquer um dos modelos visto nos modulos 3 e 4, mas você precisar avaliar os modelos vistos no modulo 5(modelos de montagem).
+- Você pode usar qualquer um dos modelos visto nos modulos 3 e 4, mas você precisar avaliar os modelos vistos no modulo 5 (modelos de montagem).
 - Um ajuste de hiperparâmentro deve ser realizado usando algumas das ferramentas e estrategias vista em aula.
 - Pelo menos um pipelini deve ser gerado contendo algumas das etapas de pré-processamento do conjunto de dados escolhidos.
 - Uma análise da importância das caracteristicas deve ser realizada, pelo menos, do modelo que teve melhor desempenho.
