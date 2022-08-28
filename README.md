@@ -41,6 +41,31 @@ Projeto final do curso em Date Science Digital House 2° semestre 2022
 - Pelo menos um pipelini deve ser gerado contendo algumas das etapas de pré-processamento do conjunto de dados escolhidos.
 - Uma análise da importância das caracteristicas deve ser realizada, pelo menos, do modelo que teve melhor desempenho.
 - A biblioteca Pickle deve ser utilizada para serializar o modelo que teve o melhor desempenho e este então deve ser entregue ao responsvel por colocar os modelos em produção.
+
+# Caracteristicas da entrega tecnica: 
+
+Jupyter notebook contendo o relatório técnico(código, análise, visualizações, conclusões). Deve ser em forma de relatório com o seguinte conteúdo.
+
+- Uma introdução em que o problema é declarado.
+-  Uma seçãoem que se descreve sucintamente as técnicas a serem usadas e as características do(s) conjunto(s) de dados utilizados(s).
+-  Uma ou mais seções nas quais são desenvolvidas as análises, visualizações, resultados do modelo, etc.
+-  um paragrafo resumindo as principais descobertas, conclusões e fazendo recomendações ás partes interessadas (se aplicável).
+
+# Recursos da apresentção:
+
+- Uma paresntação (em forma ppt, pdf ou similar) destinada a um público não técnico em que se resume o problema, os métodos utilizados e os principais resultados.
+
+# Datasets:
+
+- Voçê usará um conjunto de dados de sua escolha, existente ou construido a partir de dados coletados da web ou consumindo uma API por conta própria. Voçê pode pesquizar bancos de dados no seguinte wiki:
+
+- Dataset públicos.
+
+# Como começar? Sugestões: 
+
+- Escreva pseudoscódigos antes de começar a codificar. Muitas vezes é muito útio fornecer um esquema geral e uma lógica para a análise.
+- Leia a documentação de qualquer tecnologia ou ferramenta de análise que voçê usar. Às vezes não há tutoriais para tudo e os documentos e ajuda são essenciais para entender o funcionamento das ferramentas utilizadas. 
+- Documente todas as etapas, ttrasnformação, comandos e análises que eles realizam.
   
   - [Acesso rápido ao Jupyter Notebook](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/Code)
   - [Acesso rápido ao DataSet](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/DataSet)
