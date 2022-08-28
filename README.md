@@ -67,7 +67,7 @@ Jupyter notebook contendo o relatório técnico(código, análise, visualizaçõ
 - Leia a documentação de qualquer tecnologia ou ferramenta de análise que voçê usar. Às vezes não há tutoriais para tudo e os documentos e ajuda são essenciais para entender o funcionamento das ferramentas utilizadas. 
 - Documente todas as etapas, trasnformação, comandos e análises que eles realizam.
 
-# Acesso rápido a documentação do projeto:
+# Acesso rápido a documentação do projeto: :construction:
   
   - [Acesso rápido ao Jupyter Notebook](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/Code)
   - [Acesso rápido ao DataSet](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/DataSet)
