@@ -65,7 +65,7 @@ Jupyter notebook contendo o relatório técnico(código, análise, visualizaçõ
 
 - Escreva pseudoscódigos antes de começar a codificar. Muitas vezes é muito útio fornecer um esquema geral e uma lógica para a análise.
 - Leia a documentação de qualquer tecnologia ou ferramenta de análise que voçê usar. Às vezes não há tutoriais para tudo e os documentos e ajuda são essenciais para entender o funcionamento das ferramentas utilizadas. 
-- Documente todas as etapas, ttrasnformação, comandos e análises que eles realizam.
+- Documente todas as etapas, trasnformação, comandos e análises que eles realizam.
 
 # Acesso rápido a documentação do projeto:
   
