@@ -72,3 +72,5 @@ Jupyter notebook contendo o relatório técnico(código, análise, visualizaçõ
   - [Acesso rápido ao Jupyter Notebook](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/Code)
   - [Acesso rápido ao DataSet](https://github.com/faustinothiagos/Workshop_Final_DS_Digital_House_2022/tree/main/DataSet)
   - [Acesso rápido a documentação Scikit-Learn Pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html)
+  - [Acesso rápido a apresentação de slides .pdf](https://www.canva.com/design/DAFOUeX8AkI/0ctGRaSjiAV3941FT6U2SQ/view?utm_content=DAFOUeX8AkI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+  - 
