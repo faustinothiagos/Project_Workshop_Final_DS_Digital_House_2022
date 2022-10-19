@@ -11,6 +11,8 @@ feats_pipeline = ['Outstanding_Debt','Monthly_Inhand_Salary','Credit_History_age
 
 X_train, X_test, y_train, y_test = train_test_split(df_pipeline[feats_pipeline], df_pipeline['Credit_Score'], test_size=0.2, stratify = df_pipeline['Credit_Score'], random_state=42)
 
+feats_pipeline = ['Outstanding_Debt','Monthly_Inhand_Salary','Credit_History_age','Amount_invested_monthly', 'Payment_of_Min_Amount']
+
 def factorize_pipeline(df=df_pipeline):
     for col in df.select_dtypes('object'):
         df[col], _ = df[col].factorize()
