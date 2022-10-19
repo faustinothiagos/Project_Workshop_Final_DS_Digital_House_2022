@@ -4,9 +4,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing   import StandardScaler, OrdinalEncoder
 from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier
-import numpy as np
 
-df_pipeline = pd.read_csv('../Pipeline/df_nonull.csv', low_memory=False)
+df_pipeline = pd.read_csv(r'./df_nonull.csv', low_memory=False)
 
 feats_pipeline = ['Outstanding_Debt','Monthly_Inhand_Salary','Credit_History_age','Amount_invested_monthly', 'Payment_of_Min_Amount']
 
@@ -43,7 +42,6 @@ pipeline = Pipeline(passos)
 
 pickle.dump(pipeline.fit(X_train, y_train), open('modelostreamlit.pkl', 'wb'))
 
-#
 
 ''' 
 datasets    = generate_datasets()
