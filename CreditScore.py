@@ -28,7 +28,7 @@ col = ['Outstanding_Debt','Monthly_Inhand_Salary','Credit_History_age','Amount_i
        'Payment_of_Min_Amount']
 
 dados_deploy = pd.DataFrame(dados_dict,columns=col,index = [0])
-
+#
 if st.button('Classifique seu Credit Score'):
     pickle_model_xgb = pickle.load(open('modelostreamlit.pkl', 'rb'))
     st.text('Seu Score é: {0}'.format(pickle_model_xgb.predict(dados_deploy)))
