@@ -30,19 +30,17 @@ dados_dict = {'Monthly_Inhand_Salary'     :salario_mensal,
 }
 
 
-col = ['Monthly_Inhand_Salary', 'Outstanding_Debt', 'Amount_invested_monthly', 'Credit_History_age', 'Payment_of_Min_Amont']
+col = ['Outstanding_Debt','Monthly_Inhand_Salary','Credit_History_age','Amount_invested_monthly', 'Payment_of_Min_Amount']
 
 dados_deploy = pd.DataFrame(dados_dict,columns=col,index = [0])
 
 if st.button('Classifique seu Credit Score'):
-    pickle_model_xgb = pickle.load(open('Code\modelostreamlit.pkl', 'rb'))
-    cs = pickle_model_xgb.predict(dados_deploy)
-    if cs == [0]:
-       cs = 'Bom'
-    elif cs == [1]:
-       cs = 'Ruim'
-    else:
-       cs = 'Regular'
-    st.text('Seu Score é: {0}'.format(cs))
-    st.write(pickle_model_xgb.predict(dados_deploy))
-    st.write(dados_deploy )
+   pickle_model_xgb = pickle.load(open('Code\modelostreamlit.pkl', 'rb'))
+   cs = pickle_model_xgb.predict(dados_deploy)
+   if cs == [0]:
+      cs = 'Bom'
+   elif cs == [1]:
+      cs = 'Ruim'
+   else:
+      cs = 'Regular'
+   st.text('Seu Score é: {0}'.format(cs))
