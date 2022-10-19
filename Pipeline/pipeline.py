@@ -1,79 +1,47 @@
-from modules.validation      import Validate
-from modules.data            import Data
-from modules.log_experiments import MlFlow
-from modules.gridsearch      import GridSeach
-from modules.models          import Models
-       
-class Pipeline:
-    
-    def __init__(self):
+import pandas as pd
+import pickle
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing   import StandardScaler, OrdinalEncoder
+from sklearn.model_selection import train_test_split
+from xgboost import XGBClassifier
+import numpy as np
 
-        self.data        = Data()
-        self.models      = Models()
-        self.grid_search = GridSeach()
-        self.mlFlow      = MlFlow()
-        self.validate    = Validate()
+df_pipeline = pd.read_csv('df_nonull.csv')
 
-    def train(self,model,X_train,y_train):
+feats_pipeline = ['Outstanding_Debt','Monthly_Inhand_Salary','Credit_History_age','Amount_invested_monthly', 'Payment_of_Min_Amount']
 
-        model.fit(X_train,y_train)
+X_train, X_test, y_train, y_test = train_test_split(df_pipeline[feats_pipeline], df_pipeline['Credit_Score'], test_size=0.2, stratify = df_pipeline['Credit_Score'], random_state=42)
 
-        return model
-
-
-    def initialize_model(self,model_name,parameter):
-
-        if model_name in self.models.emsemble_names:
-            for decision_tree_parameter in self.grid_search.iterate_by_name("DecisionTreeClassifier"):
-                model = self.models.instantiate(model_name,(parameter,decision_tree_parameter)) 
-                 
-        else:
-            model = self.models.instantiate(model_name,parameter)
+def factorize_pipeline(df=df_pipeline):
+    for col in df.select_dtypes('object'):
+        df[col], _ = df[col].factorize()
         
-        parameter["model_name"] = model_name
-
-        return model
-
-    
-    def fit(self):
+def stdscaler_pipeline(df=df_pipeline):
+    for col in df.select_dtypes(['int64', 'float64']):
+        df[col] = StandardScaler().fit_transform(df[col].values.reshape(-1,1))
         
-        self.datasets = self.data.generate()
-        for X, y in self.datasets:
-            X_train, X_test, y_train, y_test = self.data.transform.split(X, y)
-            X_train, X_test                  = self.data.transform.normalize(X_train,X_test)
-
-            for model_name,parameter in self.grid_search.generate_parameter():
-                model   = self.initialize_model(model_name,parameter)
-                model   = self.train(model,X_train,y_train)
-                metrics = self.validate.eval(model,X_test,X_train,y_train,y_test)
-                self.mlFlow.log_result(parameter,metrics)
+def ordenc_pipeline(df=df_pipeline):
+    df['Credit_Score'] = OrdinalEncoder().fit_transform(df['Credit_Score'].values.reshape(-1,1)).astype(int)
 
 
-pipeline = Pipeline()
-pipeline.fit()
+passos = [('Factorize', factorize_pipeline()),
+          ('StandardScaler', stdscaler_pipeline()),
+          ('OrdinalEncoder', ordenc_pipeline()),
+          ('XGBClassifier', XGBClassifier(eval_metric = 'logloss',
+                                          use_label_encoder = False,
+                                          random_state = 42,
+                                          colsample_bytree = 0.6,
+                                          gamma = 1.0,
+                                          learning_rate = 0.1,
+                                          max_depth = None,
+                                          min_child_weight = 0.7,
+                                          n_estimators = 1500,
+                                          subsample = 1.0)) 
+          ]
 
+pipeline = Pipeline(passos)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+pickle.dump(pipeline.fit(X_train, y_train), open('modelostreamlit.pkl', 'wb'))
 
 
 
@@ -122,8 +90,3 @@ for X, y in datasets:
         print(metrics)
 
 '''
-
-
-
-
-

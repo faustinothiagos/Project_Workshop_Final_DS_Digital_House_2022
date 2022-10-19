@@ -21,14 +21,14 @@ dados_dict = {'Outstanding_Debt':divida,
               'Monthly_Inhand_Salary':salario_mensal,
               'Credit_History_age':tempo_cartao,
               'Amount_invested_monthly':investimento,
-              'Payment_of_Min_Amount':fatura
-                              
+              'Payment_of_Min_Amount':fatura      
              }
 
 col = ['Outstanding_Debt','Monthly_Inhand_Salary','Credit_History_age','Amount_invested_monthly',
        'Payment_of_Min_Amount']
+
 dados_deploy = pd.DataFrame(dados_dict,columns=col,index = [0])
 
 if st.button('Classifique seu Credit Score'):
-    pickle_model_xgb = pickle.load(open('Code\modelofinalizado.sav', 'rb'))
+    pickle_model_xgb = pickle.load(open('modelostreamlit.pkl', 'rb'))
     st.text('Seu Score é: {0}'.format(pickle_model_xgb.predict(dados_deploy)))
