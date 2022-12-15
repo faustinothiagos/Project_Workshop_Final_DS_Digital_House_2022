@@ -5,7 +5,7 @@ Projeto final do curso em Date Science Digital House 2° semestre 2022
 
 - No projeto entregador final, os alunos poderam escolher livrimente com qual conjunto de dados trabalhar.
 
-# Etapas:
+
 
 - Voçês estarão trabalhando como ciêntistas de dados para uma empresa em rápida expação. Para consolidar sua posição como analista na empresa, vocês decidem apresentar um tema inovador e inusitado á diretoria. Sua proposta tem que ser um problema que possa ser resolvido com Machine learning, e visar conhecer um setor desconhecido ou pouco explorado até o momento. Lembre-se de que você precisa mostrar como os dados agregam valor ao problema que você levantou. Qualquer questão ou problema é válido, desde que seja bem fundamentado e enquadrado como alguns dos problemas de apredizado de máquina que vimos no curso(seja de regreço, uma classificação ou um problema de agrupamento).
 
