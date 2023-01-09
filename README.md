@@ -42,7 +42,7 @@ Projeto final do curso em Date Science Digital House 2° semestre 2022
 - Uma análise da importância das caracteristicas deve ser realizada, pelo menos, do modelo que teve melhor desempenho.
 - A biblioteca Pickle deve ser utilizada para serializar o modelo que teve o melhor desempenho e este então deve ser entregue ao responsvel por colocar os modelos em produção.
 
-# Caracteristicas da entrega tecnica: 
+# Caracteristicas da entrega técnica: 
 
 Jupyter notebook contendo o relatório técnico(código, análise, visualizações, conclusões). Deve ser em forma de relatório com o seguinte conteúdo.
 
