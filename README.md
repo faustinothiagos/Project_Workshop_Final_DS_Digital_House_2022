@@ -51,7 +51,7 @@ Jupyter notebook contendo o relatório técnico(código, análise, visualizaçõ
 -  Uma ou mais seções nas quais são desenvolvidas as análises, visualizações, resultados do modelo, etc.
 -  um paragrafo resumindo as principais descobertas, conclusões e fazendo recomendações ás partes interessadas (se aplicável).
 
-# Recursos da apresentção:
+# Recursos da apresentação:
 
 - Uma paresntação (em forma ppt, pdf ou similar) destinada a um público não técnico em que se resume o problema, os métodos utilizados e os principais resultados.
 
